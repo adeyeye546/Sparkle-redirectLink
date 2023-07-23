@@ -10,7 +10,7 @@ describe('Redirection Link Test', () => {
       cy.visit(initialPageUrl);
   
       // Click the redirection link
-      cy.get('a#redirect-link').click();
+      cy.get('a#redirect-links').click();
   
       // Assert that the current URL matches the expected target URL after redirection
       cy.url().should('eq', expectedTargetUrl);
